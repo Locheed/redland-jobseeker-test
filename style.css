@@ -1,19 +1,18 @@
-/*
-  Theme Name: Redland Jobseeker
-  Author: Mika Vesasto
-  Version: 1.0
-*/
-
 
 body {
-
+	width: 1200px;
+	margin: 0 auto;
 	padding: 20px;
 
 }
 
+header .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
 header h1 .logo {
 
-	float: left;
+
 
 }
 
@@ -28,10 +27,9 @@ header h1 .logo img {
 header .main-menu-area li {
 
 	display: inline-block;
-	float: left;
+
 
 }
-
 
 .blocks {
 
@@ -95,19 +93,19 @@ ul {
 
 .icon-facebook {
 
-	background-image: url(./images/facebook.png);
+	background-image: url(../images/facebook.png);
 
 }
 
 .icon-twitter {
 
-	background-image: url(./images/twitter.jpg);
+	background-image: url(../images/twitter.jpg);
 
 }
 
 .icon-linkedin {
 
-	background-image: url(./images/linkedin.png);
+	background-image: url(../images/linkedin.png);
 
 }
 
@@ -122,4 +120,17 @@ ul {
 	width: 100%;
 	text-align: center;
 
+}
+
+/* News page */
+.news-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.post-item {
+	border-top: 15px solid slateblue;
+	border-radius: 5px;
+	padding: 40px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	margin-bottom: 60px;
 }

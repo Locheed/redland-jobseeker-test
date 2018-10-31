@@ -28,7 +28,7 @@
 						<li>SEM
 					</ul>
 
-					<p><a href="<?php echo get_page_link(34); ?>">Read more</a></p>
+					<p><a href="<?php echo get_page_link(29); ?>">Read more</a></p>
 
 				</div>
 
@@ -43,7 +43,7 @@
 						<li>Photography &amp; Illustrations</li>
 					</ul>
 
-					<p><a href="<?php echo get_page_link(36); ?>">Read more</a></p>
+					<p><a href="<?php echo get_page_link(31); ?>">Read more</a></p>
 
 				</div>
 
@@ -60,7 +60,7 @@
 					<li>Videos</li>
 					</ul>
 
-					<p><a href="<?php echo get_page_link(38); ?>">Read more</a></p>
+					<p><a href="<?php echo get_page_link(33); ?>">Read more</a></p>
 
 				</div>
 
