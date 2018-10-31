@@ -3,8 +3,13 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 20px;
-
 }
+
+body a {
+	color: #ff283c;
+	text-decoration: none;
+}
+
 
 header .wrapper {
 	display: flex;
@@ -29,6 +34,13 @@ header .main-menu-area li {
 	display: inline-block;
 
 
+
+}
+
+header .main-menu-area li a {
+	font-size: 1.5rem;
+	margin-right: 15px;
+	text-transform: uppercase;
 }
 
 .blocks {
@@ -75,7 +87,6 @@ ul {
 
 	font-size: 120%;
 	margin-bottom: 1em;
-	background: #ccc;
 
 }
 
@@ -128,9 +139,12 @@ ul {
 	margin: 0 auto;
 }
 .post-item {
-	border-top: 15px solid slateblue;
+	border-top: 15px solid #ff283c;
 	border-radius: 5px;
 	padding: 40px;
 	box-shadow: 0 0 4px rgba(0,0,0,0.2);
 	margin-bottom: 60px;
+}
+.post-item a {
+
 }
