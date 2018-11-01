@@ -3,6 +3,10 @@
 	--hover-color: #b91827;
 }
 
+.current_menu_item, .current_page_item a {
+	font-weight: 600;
+	border-bottom: 2px solid var(--main-color);
+}
 body {
 	width: 1200px;
 	margin: 0 auto;
@@ -17,9 +21,6 @@ body a:hover {
 	color: var(--hover-color);
 }
 
-header {
-
-}
 header .wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -39,15 +40,6 @@ header .main-menu-area ul {
 	list-style: none;
 }
 
-header .main-menu-area li {
-
-
-
-
-
-
-}
-
 header .main-menu-area li a {
 	font-size: 1.5rem;
 	margin-right: 15px;
@@ -60,7 +52,6 @@ header .main-menu-area li a {
 	justify-content: space-between;
 }
 .blocks {
-
 	padding: 40px;
 
 }
@@ -112,10 +103,8 @@ header .main-menu-area li a {
 }
 
 .wrapper {
-
 	clear: both;
 	margin-bottom: 1em;
-
 }
 
 
@@ -131,10 +120,8 @@ h2 {
 }
 
 h3 {
-
 	font-size: 140%;
 	margin-bottom: 1em;
-
 }
 
 p {
@@ -143,16 +130,15 @@ p {
 }
 
 ul {
-
 	font-size: 120%;
 	margin-bottom: 1em;
-
 }
 
 
 /* Footer styles */
 footer {
 	margin-top: 80px;
+	margin-bottom: 40px;
 }
 .address-container {
 	display: flex;
@@ -212,16 +198,26 @@ footer {
 }
 
 #cookie-bar {
-
 	display: none;
-	background: #ccc;
+	background: var(--main-color);
+	color: #FFF;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	z-index: 123;
 	width: 100%;
 	text-align: center;
-
+}
+#cookiebutton {
+	margin: 10px;
+	padding: 5px 20px;
+	border: 3px solid #FFF;
+	border-radius: 40px;
+	color: #FFF;
+	background: var(--main-color);
+}
+#cookiebutton:hover {
+	background: var(--hover-color);
 }
 
 /* News page */

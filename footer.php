@@ -4,7 +4,7 @@
 				<!-- Custom post type. Now company addresses are dynamically inserted from Address posts and easier to edit.
 				Limited to 3 addresses. Address posts are queried with WP_Query (with options included in an array) to local $addresses variable and then the while
 				loop will display post on a page -->
-
+					<a name="contact-us"></a>
 					<?php
 						$addresses = new WP_Query(array(
 							'posts_per_page' => 3,
@@ -85,5 +85,13 @@
 		</footer>
 
 <?php wp_footer(); ?>
+<div id="cookie-bar">
+	<div class="inner">
+		<span class="left-side">Warning - evil cookies!</span>
+		<span class="right-side">
+			<button id="cookiebutton" onClick="acceptCookie()">OK</button>
+		</span>
+	</div>
+</div>
 </body>
 </html>

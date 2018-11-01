@@ -15,6 +15,11 @@
  }
  add_action( 'wp_enqueue_scripts', 'google_fonts' );
 
+ function cookie_script() {
+    wp_enqueue_script( 'my_theme_script', get_template_directory_uri() . './script.js', true );
+}
+add_action ( 'wp_enqueue_scripts', 'cookie_script');
+
 
   /* This custom post type function would be better to keep in plugins or mu-plugins folder
   if someone would change the theme. For this Redlab test it is easier to keep in the theme folder. */
