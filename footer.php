@@ -1,7 +1,9 @@
 <footer>
 
 			<div class="wrapper">
-
+				<!-- Custom post type. Now company addresses are dynamically inserted from Address posts and easier to edit.
+				Limited to 3 addresses. Address posts are queried with WP_Query (with options included in an array) to local $addresses variable and then the while
+				loop will display post on a page -->
 				<?php
           $addresses = new WP_Query(array(
             'posts_per_page' => 3,

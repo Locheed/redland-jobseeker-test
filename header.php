@@ -10,7 +10,7 @@
 				<h1><a class="logo" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('/images/logo.svg'); ?>" alt="Redland" /></a></h1>
 
 				<nav role="navigation" class="main-menu-area">
-
+						<!-- Add menus dynamically instead of a static links -->
             <?php wp_nav_menu(array(
               'theme_location' => 'headerMenu'
             )); ?>
