@@ -1,24 +1,25 @@
 <footer>
 
-			<div class="wrapper">
+			<div class="wrapper address-container">
 				<!-- Custom post type. Now company addresses are dynamically inserted from Address posts and easier to edit.
 				Limited to 3 addresses. Address posts are queried with WP_Query (with options included in an array) to local $addresses variable and then the while
 				loop will display post on a page -->
-				<?php
-          $addresses = new WP_Query(array(
-            'posts_per_page' => 3,
-            'post_type' => 'address'
-          ));
 
-          while($addresses->have_posts()) {
-            $addresses->the_post(); ?>
-						<div class="column">
-            	<p><?php the_title(); ?></p>
-							<p><?php echo get_the_content(); ?></p>
-						</div>
-          <?php
-          }
-        ?>
+					<?php
+						$addresses = new WP_Query(array(
+							'posts_per_page' => 3,
+							'post_type' => 'address'
+						));
+
+						while($addresses->have_posts()) {
+							$addresses->the_post(); ?>
+					<div class="column">
+						<p class="address-title"><?php the_title(); ?></p>
+						<p class="address-content"><?php echo get_the_content(); ?></p>
+					</div>
+					<?php
+					}
+					?>
 				<!--
 				<div class="column">
 
@@ -46,7 +47,6 @@
 					Spain</p>
 
 				</div>-->
-
 				<div class="column">
 
 					<p>(09) 547 509 50<br />
@@ -54,7 +54,9 @@
 
 				</div>
 
+
 			</div>
+
 
 			<div class="wrapper">
 
@@ -64,7 +66,7 @@
 
 				</div>
 
-				<div class="column">
+				<div class="column copy">
 
 					&copy; You the jobseeker and Redland 2016
 

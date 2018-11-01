@@ -11,10 +11,8 @@
 		</section>
 
 		<section class="blocks">
-
+			<h2>Some of our services</h2>
 			<div class="wrapper">
-
-				<h2>Some of our services</h2>
 
 				<div class="block">
 

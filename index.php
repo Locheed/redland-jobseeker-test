@@ -15,14 +15,14 @@ get_header();
 					<p>Posted by <?php the_author_posts_link(); ?> on <?php echo date_i18n( get_option( 'date_format') ); ?> (<?php the_time('G:i'); ?>) - <?php echo get_the_category_list(', '); ?></p>
 				</div>
 				<div class="post-content">
-					<!-- If content has an excerpt then show that. Else trim the content to 18 words. -->
+					<!-- If content has an excerpt then show that. Else trim the content to 50 words. -->
 					<?php if(has_excerpt()) {
 						the_excerpt();
 						} else {
-							wp_trim_words(get_the_content(), 18);
+							echo wp_trim_words(get_the_content(), 50);
 						}?>
 					<?php the_tags(); ?>
-					<a href="<?php the_permalink(); ?>"">Read more &raquo;</a>
+					<a href="<?php the_permalink(); ?>" class="read-more">Read more &raquo;</a>
 				</div>
 
 			</div>

@@ -5,10 +5,15 @@
   }
   add_action('wp_enqueue_scripts', 'load_style_files');
 
-  function redlab_features() {
+  function redland_features() {
     register_nav_menu('headerMenu', 'Header Menu');
   }
-  add_action('after_setup_theme', 'redlab_features');
+  add_action('after_setup_theme', 'redland_features');
+
+  function google_fonts() {
+ wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,600', false );
+ }
+ add_action( 'wp_enqueue_scripts', 'google_fonts' );
 
 
   /* This custom post type function would be better to keep in plugins or mu-plugins folder
