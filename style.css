@@ -62,6 +62,7 @@ header .main-menu-area li a {
 	padding: 40px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.2);
 	border-top: 10px solid var(--main-color);
+	border-radius: 10px;
 }
 .block:last-child {
 	margin-right: 0;
