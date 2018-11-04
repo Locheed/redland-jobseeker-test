@@ -49,8 +49,8 @@
 				</div>-->
 				<div class="column">
 
-					<p>(09) 547 509 50<br />
-					info@redland.fi</a></p>
+					<p><a href="tel:+358954750950">(09) 547 509 50</a><br />
+					<a href="mailto:info@redland.fi')">info@redland.fi</a></p>
 
 				</div>
 

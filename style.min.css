@@ -1,4 +1,4 @@
-:root{--main-color:#ff283c;--hover-color:#b91827}
+:root{--main-color:#ff283c;--hover-color:#5305ff}
 body{max-width:1200px;margin:0 auto;padding:20px}
 body a{color:var(--main-color);text-decoration:none}
 body a:hover{color:var(--hover-color)}
@@ -11,7 +11,7 @@ header .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box
 header h1 .logo img{width:120px;height:89px;margin-bottom:1em}
 .main-menu-area ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style:none}
 .main-menu-area li a{font-size:1.5rem;margin-right:15px;text-transform:uppercase}
-.main-menu-area li a:hover{border-bottom:3px solid var(--main-color)}
+.main-menu-area li a:hover{border-bottom:3px solid var(--hover-color)}
 .news-container{width:1200px;margin:0 auto}
 .news-container h1{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-family:Montserrat;color:var(--main-color);text-transform:uppercase}
 .post-item{border-top:15px solid #ff283c;border-radius:5px;padding:40px;-webkit-box-shadow:0 0 4px rgba(0,0,0,0.2);box-shadow:0 0 4px rgba(0,0,0,0.2);margin-bottom:60px}
