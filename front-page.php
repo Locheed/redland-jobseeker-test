@@ -1,11 +1,16 @@
 <?php get_header(); ?>
+<?php
+    $herotext = esc_attr(get_option('hero_text'));
+    $herodesc = esc_attr(get_option('hero_desc'));
+    $secherotext = esc_attr(get_option('sec_hero_text'));
+    $secherodesc = esc_attr(get_option('sec_hero_desc'));
+  ?>
 <section class="content">
 
 			<div class="wrapper">
 
-				<h2>We are an advertising agency that communicates with digital heart</h2>
-				<p>Redland has been formed naturally by combining the competencies of a creative agency, a PR agency and a digital agency. Our clients appreciate our wide range of know-how and our reliable level of service. We are a compact and agile agency.
-
+				<h2><?php print $herotext; ?></h2>
+				<p><?php print $herodesc; ?></p>
 			</div>
 
 		</section>
@@ -70,8 +75,8 @@
 
 			<div class="wrapper">
 
-				<h2>Solution-based planning and marketing integration</h2>
-				<p>We plan and execute marketing and communication ideas for all types of media across different channels. We combine outstanding ideas, innovative design and tech know-how into brand building strategies and actions.</p>
+				<h2><?php print $secherotext; ?></h2>
+				<p><?php print $secherodesc; ?></p>
 
 			</div>
 

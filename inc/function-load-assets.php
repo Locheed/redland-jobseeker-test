@@ -5,6 +5,16 @@
   }
   add_action('wp_enqueue_scripts', 'load_style_files');
 
+  function load_admin_style_files($hook) {
+
+    if ('toplevel_page_redland-theme' != $hook) {
+      return;
+    }
+      wp_register_style('redland_admin', get_template_directory_uri() . '/assets/css/redland.admin.css', array(), '1.0.0', 'all');
+      wp_enqueue_style('redland_admin');
+  }
+  add_action('admin_enqueue_scripts', 'load_admin_style_files');
+
   // Load navigation menu script
   function redland_features() {
     register_nav_menu('headerMenu', 'Header Menu');

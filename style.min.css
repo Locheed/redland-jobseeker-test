@@ -1,5 +1,5 @@
 :root{--main-color:#ff283c;--hover-color:#b91827}
-body{width:1200px;margin:0 auto;padding:20px}
+body{max-width:1200px;margin:0 auto;padding:20px}
 body a{color:var(--main-color);text-decoration:none}
 body a:hover{color:var(--hover-color)}
 .wrapper{clear:both;margin-bottom:1em}

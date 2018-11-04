@@ -1,0 +1,28 @@
+/*
+  @package redlandtheme
+*/
+
+.redland-admin-hero-settings {
+  display: flex;
+}
+.redland-herosection-preview {
+  max-width: 60%;
+  padding: 80px;
+  text-align: center;
+}
+.redland-herosection-preview h1 {
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #ff283c;
+	font-size: 160%;
+	margin-bottom: 1em;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.redland-herosection-preview p {
+	font-size: 120%;
+	margin-bottom: 1em;
+}
+.form-table tbody tr td input {
+  width: 600px;
+}
