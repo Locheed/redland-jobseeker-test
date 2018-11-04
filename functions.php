@@ -6,3 +6,9 @@
 
   // Enable post-thumbnails
   add_theme_support( 'post-thumbnails' );
+
+  // Exclude folders for exporting
+  add_filter('ai1wm_exclude_content_from_export', function($exclude_filters) {
+  $exclude_filters[] = 'node_modules';
+  return $exclude_filters;
+});
