@@ -7,7 +7,7 @@
   <header>
 			<div class="wrapper">
 
-				<h1><a class="logo" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('/images/logo.svg'); ?>" alt="Redland" /></a></h1>
+				<h1><a class="logo" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('/assets/img/logo.svg'); ?>" alt="Redland" /></a></h1>
 
 				<nav role="navigation" class="main-menu-area">
 						<!-- Add menus dynamically instead of a static links -->

@@ -1,7 +1,7 @@
+"use strict";
+
 function ourownonloadfunction() {
-
   document.getElementById('cookie-bar').style.display = 'block';
-
 }
 
 function acceptCookie() {

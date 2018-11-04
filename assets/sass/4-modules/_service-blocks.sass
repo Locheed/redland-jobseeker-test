@@ -1,0 +1,44 @@
+/* Service blocks */
+.blocks .wrapper
+	display: flex
+	justify-content: space-between
+.blocks
+	padding: 40px
+.block
+  flex: 1
+  text-align: center
+  margin-right: 40px
+  padding: 40px
+  box-shadow: 0 0 6px rgba(0,0,0,0.2)
+  border-top: 10px solid var(--main-color)
+  border-radius: 10px
+  &:last-child
+    margin-right: 0
+  h3
+    font-family: Montserrat
+    font-weight: 600
+    text-transform: uppercase
+  ul
+    min-height: 250px
+  ul li
+    list-style: none
+    text-align: left
+    padding: 5px
+    &:before
+      content: ''
+      padding: .5rem
+      margin-right: 5px
+      display: inline-block
+      background-size: contain
+      background-image: url(./images/correct.svg)
+  a
+    font-size: .8rem
+    font-weight: 600
+    border: 3px solid var(--main-color)
+    padding: 10px 20px
+    border-radius: 50px
+    text-transform: uppercase
+    font-family: Montserrat
+    &:hover
+      background-color: var(--main-color)
+      color: #FFF
