@@ -9,7 +9,7 @@
   <header>
 			<div class="wrapper">
 
-				<h1><a class="logo" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('/assets/img/logo.svg'); ?>" alt="Redland" /></a></h1>
+				<h1><a class="logo" href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri('/assets/img/logo.svg'); ?>" alt="Redland" />Redland</a></h1>
 
 				<nav role="navigation" class="main-menu-area">
 						<!-- Add menus dynamically instead of a static links -->
@@ -28,4 +28,6 @@
 				</nav>
 
 			</div>
+			<h2 class="main-hero-text">Solving problems is our speciality <span>together <span id="heart"></span> we make the difference</span></h2>
+			<hr class="divider">
 		</header>

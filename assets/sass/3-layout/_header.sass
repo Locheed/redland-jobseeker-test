@@ -1,9 +1,51 @@
+
+header
+	background: linear-gradient(rgba(#951555, 0.9), rgba(#6b76ff, 0.7)), url(./assets/img/bg_hero.jpg) 0 0 / cover no-repeat
+	height: 100vh
+	margin-bottom: 100px
 header .wrapper
+	max-width: 80%
 	display: flex
 	justify-content: space-between
+	align-items: center
+	margin: 0 auto
 
 header h1 .logo img
 	width: 120px
 	height: 89px
-	margin-bottom: 1em
+	padding: 0 10px
+header h1 .logo
+	display: flex
+	align-items: center
+	color: #fff
+
+.main-hero-text
+	position: relative
+	z-index: 2
+	max-width: 800px
+	color: #ffffff
+	font-size: 2.5rem
+	line-height: 1.7
+	margin:
+		top: 10%
+		left: auto
+		right: auto
+.main-hero-text	span
+	text-transform: uppercase
+.divider
+	max-width: 200px
+	height: 3px
+	border: 0
+	background-color: var(--main-color)
+
+#heart
+	z-index: -1
+	position: absolute
+	top: 60px
+	left: 359px
+	background: url(./assets/img/heart.svg) 0 0 / cover
+	width: 95px
+	height: 95px
+	filter: blur(4px)
+
 

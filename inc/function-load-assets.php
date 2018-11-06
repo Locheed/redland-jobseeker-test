@@ -2,6 +2,7 @@
   // Load style files
   function load_style_files() {
     wp_enqueue_style('main_style', get_stylesheet_uri());
+    wp_enqueue_style('normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
   }
   add_action('wp_enqueue_scripts', 'load_style_files');
 
@@ -23,7 +24,7 @@
 
   // Load Google Fonts
   function google_fonts() {
-  wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,600', false );
+  wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,600|Raleway:400,600', false );
   }
   add_action( 'wp_enqueue_scripts', 'google_fonts' );
 

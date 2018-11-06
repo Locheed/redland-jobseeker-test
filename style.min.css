@@ -1,16 +1,24 @@
 :root{--main-color:#ff283c;--hover-color:#5305ff}
-body{max-width:1200px;margin:0 auto;padding:20px}
+body{margin:0 auto}
 body a{color:var(--main-color);text-decoration:none}
 body a:hover{color:var(--hover-color)}
-.wrapper{clear:both;margin-bottom:1em}
+.wrapper{margin-bottom:1em}
+ul{font-size:120%;margin-bottom:1em}
 h2{font-family:Montserrat;font-weight:600;color:var(--main-color);font-size:160%;margin-bottom:1em;text-shadow:0 2px 2px rgba(0,0,0,0.2);text-align:center}
 h3{font-size:140%;margin-bottom:1em}
 p{font-size:120%;margin-bottom:1em}
-ul{font-size:120%;margin-bottom:1em}
-header .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-header h1 .logo img{width:120px;height:89px;margin-bottom:1em}
+.main-menu-area li a{font-family:Raleway}
+header h1 .logo{font-family:Raleway}
+header{background:-webkit-gradient(linear,left top,left bottom,from(rgba(149,21,85,0.9)),to(rgba(107,118,255,0.7))),url(./assets/img/bg_hero.jpg) 0 0/cover no-repeat;background:linear-gradient(rgba(149,21,85,0.9),rgba(107,118,255,0.7)),url(./assets/img/bg_hero.jpg) 0 0/cover no-repeat;height:100vh;margin-bottom:100px}
+header .wrapper{max-width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto}
+header h1 .logo img{width:120px;height:89px;padding:0 10px}
+header h1 .logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#fff}
+.main-hero-text{position:relative;z-index:2;max-width:800px;color:#fff;font-size:2.5rem;line-height:1.7;margin-top:10%;margin-left:auto;margin-right:auto}
+.main-hero-text span{text-transform:uppercase}
+.divider{max-width:200px;height:3px;border:0;background-color:var(--main-color)}
+#heart{z-index:-1;position:absolute;top:60px;left:359px;background:url(./assets/img/heart.svg) 0 0/cover;width:95px;height:95px;-webkit-filter:blur(4px);filter:blur(4px)}
 .main-menu-area ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style:none}
-.main-menu-area li a{font-size:1.5rem;margin-right:15px;text-transform:uppercase}
+.main-menu-area li a{font-size:1.3rem;margin-right:15px;color:#FFF;padding:5px}
 .main-menu-area li a:hover{border-bottom:3px solid var(--hover-color)}
 .news-container{width:1200px;margin:0 auto}
 .news-container h1{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-family:Montserrat;color:var(--main-color);text-transform:uppercase}
