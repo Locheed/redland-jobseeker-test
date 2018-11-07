@@ -3,12 +3,15 @@
 	display: flex
 	justify-content: space-between
 .blocks
-	padding: 40px
+  padding: 0
+  margin: 100px 0
 .block
+  min-width: 300px
   flex: 1
   text-align: center
   margin-right: 40px
-  padding: 40px
+  margin-bottom: 100px
+  padding: 30px
   box-shadow: 0 0 6px rgba(0,0,0,0.2)
   border-top: 10px solid var(--main-color)
   border-radius: 10px
@@ -42,3 +45,10 @@
     &:hover
       background-color: var(--main-color)
       color: #FFF
+
+@media only screen and (max-width: 1300px)
+  .blocks .wrapper
+    flex-wrap: wrap
+    justify-content: center
+  .block
+    max-width: 300px

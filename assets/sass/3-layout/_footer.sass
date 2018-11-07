@@ -5,6 +5,7 @@ footer
 .address-container
 	display: flex
 	justify-content: center
+	flex-wrap: wrap
 
 .column
 	margin-right: 40px
@@ -54,3 +55,10 @@ footer
 .icon-linkedin
 
 	background-image: url(./assets/img/linkedin.png)
+
+@media only screen and (max-width: 630px)
+	.address-container
+		display: block
+		text-align: center
+		//flex-direction: column
+		//align-items: center

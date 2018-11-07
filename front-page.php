@@ -8,12 +8,9 @@
 <section class="content">
 
 			<div class="wrapper">
-
 				<h2><?php print $herotext; ?></h2>
 				<p><?php print $herodesc; ?></p>
 			</div>
-
-		</section>
 
 		<section class="blocks">
 			<h2>Some of our services</h2>
@@ -64,21 +61,15 @@
 					</ul>
 
 					<p><a href="<?php echo get_page_link(33); ?>">Read more</a></p>
-
-				</div>
-
+				</div
 			</div>
-
 		</section>
 
-		<section class="content">
 
 			<div class="wrapper">
-
 				<h2><?php print $secherotext; ?></h2>
 				<p><?php print $secherodesc; ?></p>
-
 			</div>
 
-		</section>
+</section>
 <?php get_footer(); ?>
