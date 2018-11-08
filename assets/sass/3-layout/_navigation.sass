@@ -1,21 +1,67 @@
+// Global navbar styling
+.navbar-container
+	position: fixed
+	width: 100%
+.navbar
+	max-width: 80%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin: 0 auto
+// Navbar logo
+.navbar .logo img
+	width: 120px
+	height: 89px
+	padding: 0 10px
+.navbar .logo
+	display: flex
+	align-items: center
+	color: #fff
+
+// Mobile navbar with sidemenu
+
+.navbar-sidemenu
+	position: fixed
+	top: 0
+	right: 0
+	z-index: 3
+	background-color: #111
+	opacity: .9
+	height: 100%
+	width: 0
+	overflow-x: hidden
+	transition: .5s
+.main-menu-area-collapsed
+	margin-top: 40px
+	ul
+		list-style: none
+		li a
+			padding: 0 40px
+			font-size: 1.4rem
+			color: #fff
+			&:hover
+				border-bottom: 3px solid var(--hover-color)
+.btn-close
+	color: #fff
+	font-size: 2.5rem
+	margin-left: 15px
+
 .main-menu-area
-	display: block
-.main-menu-area ul
-	list-style: none
-	li
-		margin-bottom: 10px
-		a
-			font-size: 1.5rem
+	display: none
 
 @media only screen and (min-width: 1001px)
+	.main-menu-area
+		display: block
 	.main-menu-area ul
 		display: flex
 		list-style: none
 
-.main-menu-area li a
-	font-size: 1.3rem
-	margin-right: 15px
-	color: #FFF
-	padding: 5px
-	&:hover
-		border-bottom: 3px solid var(--hover-color)
+	.main-menu-area li a
+		font-size: 1.3rem
+		margin-right: 15px
+		color: #FFF
+		padding: 5px
+		&:hover
+			border-bottom: 3px solid var(--hover-color)
+	.hamburger
+		display: none
