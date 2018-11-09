@@ -2,12 +2,21 @@
 .navbar-container
 	position: fixed
 	width: 100%
+	z-index: 99
 .navbar
 	max-width: 80%
 	display: flex
 	justify-content: space-between
 	align-items: center
 	margin: 0 auto
+.navbar-bg // Style background of navbar after scrolling down
+	background-color: var(--main-color)
+	max-height: 10%
+	transition: 1s
+	.navbar .logo img
+		width: calc(120px - 15%)
+		height: calc(89px - 15%)
+
 // Navbar logo
 .navbar .logo img
 	width: 120px
@@ -24,7 +33,7 @@
 	position: fixed
 	top: 0
 	right: 0
-	z-index: 3
+	z-index: 100
 	background-color: #111
 	opacity: .9
 	height: 100%
@@ -61,7 +70,16 @@
 		margin-right: 15px
 		color: #FFF
 		padding: 5px
-		&:hover
-			border-bottom: 3px solid var(--hover-color)
+		&:after // Links underline and hover
+			display: block
+			content: ''
+			border-bottom: solid 3px var(--main-color)
+			transform: scaleX(0)
+			transition: transform 250ms ease-in-out
+		&:hover:after
+			transform: scaleX(1)
+	.navbar-bg .main-menu-area li a
+		&:after
+			border-bottom: solid 3px var(--hover-color)
 	.hamburger
 		display: none
