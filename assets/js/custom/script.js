@@ -26,11 +26,13 @@ window.onload = ourownonloadfunction;
 
 document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar-container');
+  const body = document.querySelector('body');
   document.addEventListener('scroll', () => {
 
-    // Toggle navbar background color after window is scrolled enough
-    window.scrollY > window.innerHeight ? navbar.classList.add('navbar-bg') : navbar.classList.remove('navbar-bg');
-
+    // Toggle navbar background color after window is scrolled enough and has a class of home
+    if (body.classList.contains('home')) {
+      window.scrollY > window.innerHeight ? navbar.classList.add('navbar-bg') : navbar.classList.remove('navbar-bg');
+    }
   });
 });
 

@@ -4,6 +4,7 @@ body a{color:var(--main-color);text-decoration:none}
 body a:hover{color:var(--hover-color)}
 .wrapper{margin-bottom:1em}
 ul{font-size:120%;margin-bottom:1em}
+body.page-template,body.blog{padding-top:100px}
 h2{font-family:Montserrat;font-weight:600;color:var(--main-color);font-size:160%;margin-bottom:1em;text-shadow:0 2px 2px rgba(0,0,0,0.2);text-align:center}
 h3{font-size:140%;margin-bottom:1em}
 p{font-size:120%;margin-bottom:1em}
@@ -17,7 +18,7 @@ header{background:-webkit-gradient(linear,left top,left bottom,from(rgba(149,21,
 .divider{max-width:200px;height:3px;border:0;background-color:var(--main-color)}
 #heart{z-index:-1;position:absolute;top:60px;left:359px;background:url(./assets/img/heart.svg) 0 0/cover;width:95px;height:95px;-webkit-filter:blur(4px);filter:blur(4px)}
 .content{margin:200px auto;max-width:70%}
-.navbar-container{position:fixed;width:100%;z-index:99}
+.navbar-container{position:fixed;top:32px;width:100%;z-index:99}
 .navbar{max-width:80%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto}
 .navbar-bg{background-color:var(--main-color);max-height:10%;-webkit-transition:1s;transition:1s}
 .navbar-bg .navbar .logo img{width:calc(120px - 15%);height:calc(89px - 15%)}
@@ -59,6 +60,7 @@ footer{margin-top:80px;margin-bottom:40px}
 .team-member-content p{margin:0}
 .team-member-content .position{font-weight:600;margin-bottom:10px}
 .team-member-contact{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center;font-weight:600;padding:10px}
+body.page-template-default:not(.home){padding-top:100px}
 .blocks .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .blocks{padding:0;margin:100px 0}
 .block{min-width:300px;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;margin-right:40px;margin-bottom:100px;padding:30px;-webkit-box-shadow:0 0 6px rgba(0,0,0,0.2);box-shadow:0 0 6px rgba(0,0,0,0.2);border-top:10px solid var(--main-color);border-radius:10px}
@@ -73,7 +75,7 @@ footer{margin-top:80px;margin-bottom:40px}
 #cookiebutton{margin:10px;padding:5px 20px;border:3px solid #FFF;border-radius:40px;color:#FFF;background:var(--main-color)}
 #cookiebutton:hover{background:var(--hover-color)}
 @media only screen and (min-width:1001px){.main-menu-area{display:block}
-.main-menu-area ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style:none}
+.main-menu-area ul{display:-webkit-box;display:-ms-flexbox;display:flex;list-style:none;text-align:center}
 .main-menu-area li a{font-size:1.3rem;margin-right:15px;color:#FFF;padding:5px}
 .main-menu-area li a:after{display:block;content:'';border-bottom:solid 3px var(--main-color);-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transition:-webkit-transform 250ms ease-in-out;transition:-webkit-transform 250ms ease-in-out;transition:transform 250ms ease-in-out;transition:transform 250ms ease-in-out,-webkit-transform 250ms ease-in-out}
 .main-menu-area li a:hover:after{-webkit-transform:scaleX(1);transform:scaleX(1)}
