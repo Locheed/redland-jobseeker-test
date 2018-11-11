@@ -45,3 +45,36 @@
 	) );
 }
 add_action( 'init', 'team_post_type', 0 );
+
+//
+// Reference page
+//
+function reference_post_type() {
+
+   // Labels
+	$labels = array(
+		'name' => _x("References", "post type general name"),
+		'singular_name' => _x("Reference", "post type singular name"),
+		'menu_name' => 'Reference Items',
+		'add_new' => _x("Add New", "reference item"),
+		'add_new_item' => __("Add New Profile"),
+		'edit_item' => __("Edit Profile"),
+		'new_item' => __("New Profile"),
+		'view_item' => __("View Profile"),
+		'search_items' => __("Search Profiles"),
+		'not_found' =>  __("No Profiles Found"),
+		'not_found_in_trash' => __("No Profiles Found in Trash"),
+		'parent_item_colon' => ''
+	);
+
+	// Register post type
+	register_post_type('reference' , array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => false,
+		'menu_icon' => 'dashicons-laptop',
+		'rewrite' => false,
+		'supports' => array('title', 'editor', 'thumbnail')
+	) );
+}
+add_action( 'init', 'reference_post_type', 0 );

@@ -33,3 +33,4 @@
     wp_enqueue_script( 'my_theme_script', get_template_directory_uri() . '/assets/js/custom.min.js', true );
   }
   add_action ( 'wp_enqueue_scripts', 'cookie_script');
+
