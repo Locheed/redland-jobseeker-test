@@ -1,7 +1,7 @@
 // Global navbar styling
 .navbar-container
 	position: fixed
-	top: 32px
+	top: 0
 	width: 100%
 	z-index: 999
 .navbar
@@ -13,7 +13,7 @@
 .navbar-bg // Style background of navbar after scrolling down
 	background-color: var(--main-color)
 	max-height: 10%
-	transition: 1s
+	// transition: 1s
 	.navbar .logo img
 		width: calc(120px - 15%)
 		height: calc(89px - 15%)
@@ -34,7 +34,7 @@
 	position: fixed
 	top: 0
 	right: 0
-	z-index: 100
+	z-index: 1000
 	background-color: #111
 	opacity: .9
 	height: 100%
@@ -85,3 +85,9 @@
 			border-bottom: solid 3px var(--hover-color)
 	.hamburger
 		display: none
+
+@media only screen and (max-width: 430px)
+	.navbar .logo img
+		display: none
+	.navbar
+		padding-top: 20px

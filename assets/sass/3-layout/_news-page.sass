@@ -1,6 +1,6 @@
 /* News page */
 .news-container
-	width: 1200px
+	max-width: 1200px
 	margin: 0 auto
 
 .news-container h1
@@ -28,3 +28,7 @@
 .post-content .read-more
 	display: block
 	margin-top: 10px
+
+@media only screen and (max-width: 380px)
+	.news-container h1
+		font-size: 1.5rem
